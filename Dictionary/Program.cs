@@ -10,34 +10,36 @@ namespace Dictionary
     {
         static void Main(string[] args)
         {
-            // Создайте словарь для хранения перевода слов с одного языка на другой.
+            //Создайте словарь для хранения перевода слов с одного языка на другой.
 
             //Dictionary<string, string> wordTranslationRepository = new Dictionary<string, string>
             //{
-            //    { "спорт", "sport" },
-            //    { "словарь", "dictionary" },
-            //    { "собака", "dog" }
+            //     { "спорт", "sport" },
+            //     { "словарь", "dictionary" },
+            //     { "собака", "dog" }
             //};
 
-            //Console.WriteLine("Перевод какого слова на англ язык хотите знать: спорт, словарь, собака");
-            //Console.Write("введите: ");
-            //string inputWord = Console.ReadLine().ToLower().Trim();
+            // Console.WriteLine("Перевод какого слова на англ язык хотите знать: спорт, словарь, собака");
+            // Console.Write("введите: ");
+            // string inputWord = Console.ReadLine();
 
-            //if (string.IsNullOrEmpty(inputWord))
-            //{
-            //    Console.WriteLine("некорректно введено слово");
-            //}
-            //else
-            //{
-            //    try
-            //    {
-            //        Console.WriteLine($"перевод слова {inputWord} - {wordTranslationRepository[inputWord]}");
-            //    }
-            //    catch (KeyNotFoundException)
-            //    {
-            //        Console.WriteLine("веденного слова нет");
-            //    }
-            //}
+            // if (string.IsNullOrEmpty(inputWord))
+            // {
+            //     Console.WriteLine("некорректно введено слово");
+            // }
+            // else
+            // {
+            //     inputWord = inputWord.ToLower().Trim();
+
+            //     if (wordTranslationRepository.ContainsKey(inputWord))
+            //     {
+            //         Console.WriteLine($"перевод слова {inputWord} - {wordTranslationRepository[inputWord]}");
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine("веденного слова нет");
+            //     }
+            // }
 
             // Объявите словарь, содержащий информацию о продуктах в магазине
 
@@ -52,7 +54,13 @@ namespace Dictionary
             //};
             //float totalPurchasePrice = 0;
 
-            //Console.WriteLine("продукты в магазине: яблоко, банан, груша, молоко, шоколадц");
+            //Console.WriteLine("продукты в магазине:");
+
+            //foreach (string product in productPrices.Keys)
+            //{
+            //    Console.WriteLine(product);
+            //}
+
             //Console.WriteLine("если завершили выбор, напишите 'выход'");
 
             //while (true)
@@ -63,18 +71,18 @@ namespace Dictionary
             //    if (string.IsNullOrEmpty(inputNameProduct))
             //    {
             //        Console.WriteLine("Некорректно введено слово");
-            //        continue; 
+            //        continue;
             //    }
 
             //    if (inputNameProduct == "выход")
             //    {
-            //        break; 
+            //        break;
             //    }
 
             //    if (!productPrices.ContainsKey(inputNameProduct))
             //    {
             //        Console.WriteLine("Такого продукта нет в магазине.");
-            //        continue; 
+            //        continue;
             //    }
 
             //    int inputProductQuantity;
@@ -82,7 +90,7 @@ namespace Dictionary
             //    if (!int.TryParse(Console.ReadLine(), out inputProductQuantity) || inputProductQuantity < 0)
             //    {
             //        Console.WriteLine("Некорректно введено количество товара. Введите целое неотрицательное число.");
-            //        continue; 
+            //        continue;
             //    }
 
             //    totalPurchasePrice += productPrices[inputNameProduct] * inputProductQuantity;
@@ -159,14 +167,14 @@ namespace Dictionary
             //    {
             //        Console.WriteLine("Вы ввели пустую строку. Пожалуйста, выберите книгу.");
             //        Console.Clear();
-            //        continue; 
+            //        continue;
             //    }
 
             //    if (!libraryCatalog.ContainsKey(userChoice))
             //    {
             //        Console.WriteLine("Книга с таким названием не найдена.");
             //        Console.Clear();
-            //        continue; 
+            //        continue;
             //    }
 
             //    if (libraryCatalog[userChoice] > 0)
@@ -181,7 +189,7 @@ namespace Dictionary
 
             //    Console.WriteLine("\nЕще что-то хотите? (да/нет)");
             //    string userСontinues;
-            //    while (true) 
+            //    while (true)
             //    {
             //        Console.Write("Ваш выбор: ");
             //        userСontinues = Console.ReadLine().ToLower().Trim();
@@ -193,7 +201,7 @@ namespace Dictionary
             //        }
             //        else if (userСontinues == "да" || userСontinues == "нет")
             //        {
-            //            break; 
+            //            break;
             //        }
             //        else
             //        {
@@ -203,10 +211,10 @@ namespace Dictionary
 
             //    if (userСontinues == "нет")
             //    {
-            //        break; 
+            //        break;
             //    }
 
-            //    Console.Clear(); 
+            //    Console.Clear();
             //}
         }
     }
